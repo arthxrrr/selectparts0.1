@@ -1,0 +1,107 @@
+/* ============================================
+   SELECT PARTS - Design System Variables
+   ============================================ */
+
+:root {
+  /* === Cores Primárias === */
+  --primary-blue: #1e3a5f;
+  --primary-blue-dark: #152a45;
+  --primary-blue-light: #2d5a87;
+  --primary-orange: #e85d04;
+  --primary-orange-dark: #c44d03;
+  --primary-orange-light: #ff6b1a;
+
+  /* === Cores de Sucesso/WhatsApp === */
+  --success-green: #25d366;
+  --success-green-dark: #1da851;
+
+  /* === Cores Neutras === */
+  --neutral-50: #fafafa;
+  --neutral-100: #f8f9fa;
+  --neutral-200: #e9ecef;
+  --neutral-300: #dee2e6;
+  --neutral-400: #ced4da;
+  --neutral-500: #adb5bd;
+  --neutral-600: #6c757d;
+  --neutral-700: #495057;
+  --neutral-800: #343a40;
+  --neutral-900: #212529;
+
+  /* === Cores de Feedback === */
+  --error-red: #dc3545;
+  --warning-yellow: #ffc107;
+  --info-blue: #0dcaf0;
+
+  /* === Tipografia === */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* === Espaçamentos === */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+
+  /* === Bordas === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* === Sombras === */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+  /* === Transições === */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* === Z-Index === */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal-backdrop: 300;
+  --z-modal: 400;
+  --z-tooltip: 500;
+  --z-whatsapp: 600;
+
+  /* === Container === */
+  --container-max-width: 1200px;
+  --container-padding: var(--spacing-lg);
+
+  /* === Header === */
+  --header-height: 80px;
+  --header-height-scrolled: 64px;
+}
+
+/* === Breakpoints (para referência) ===
+   Mobile: < 768px
+   Tablet: 768px - 1023px
+   Desktop: >= 1024px
+   Large: >= 1440px
+*/

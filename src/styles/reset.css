@@ -1,0 +1,99 @@
+/* ============================================
+   SELECT PARTS - CSS Reset
+   ============================================ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configurações base do HTML */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Configurações base do body */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Imagens responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Herdar fontes em inputs e botões */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* Remover estilos de lista */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Links sem sublinhado por padrão */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Botões sem estilo padrão */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Fieldset e legend */
+fieldset {
+    border: none;
+}
+
+/* Evitar overflow de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Root stacking context */
+#root {
+    isolation: isolate;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

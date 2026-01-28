@@ -1,0 +1,258 @@
+/* ============================================
+   SELECT PARTS - Page Styles (Shared)
+   ============================================ */
+
+/* === Page Header === */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    padding: var(--spacing-4xl) 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.page-header h1 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    z-index: 1;
+}
+
+.page-header p {
+    color: var(--neutral-300);
+    font-size: var(--font-size-lg);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* === Content Section === */
+.content-section {
+    padding: var(--spacing-4xl) 0;
+}
+
+.content-section.alt {
+    background-color: var(--neutral-100);
+}
+
+/* === Two Column Layout === */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.two-column.reverse {
+    direction: rtl;
+}
+
+.two-column.reverse>* {
+    direction: ltr;
+}
+
+.two-column img {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+/* === Values Grid === */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-3xl);
+}
+
+.value-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border-left: 4px solid var(--primary-orange);
+    transition: all var(--transition-normal);
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-card h4 {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* === Timeline === */
+.timeline {
+    position: relative;
+    padding-left: var(--spacing-3xl);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--neutral-300);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: var(--spacing-2xl);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--spacing-3xl) - 6px);
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background: var(--primary-orange);
+    border-radius: var(--radius-full);
+    border: 3px solid white;
+    box-shadow: var(--shadow-sm);
+}
+
+.timeline-item h4 {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* === Form Page === */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+/* === Benefits List === */
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin: var(--spacing-2xl) 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.benefit-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: var(--success-green);
+}
+
+.benefit-item p {
+    margin: 0;
+}
+
+/* === Course Card === */
+.course-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.course-image {
+    height: 250px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-image svg {
+    width: 80px;
+    height: 80px;
+    fill: white;
+    opacity: 0.8;
+}
+
+.course-content {
+    padding: var(--spacing-2xl);
+}
+
+.course-content h3 {
+    margin-bottom: var(--spacing-md);
+}
+
+.course-features {
+    margin: var(--spacing-xl) 0;
+}
+
+.course-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    color: var(--neutral-700);
+}
+
+.course-feature svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-orange);
+    flex-shrink: 0;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .two-column.reverse {
+        direction: ltr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-list {
+        grid-template-columns: 1fr;
+    }
+}
