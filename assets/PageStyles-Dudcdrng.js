@@ -1,1 +1,0 @@
-import{r}from"./index-DVxm6WAT.js";function n(t,e){r.useEffect(()=>{const c="Select Parts";document.title=t?`${t} | ${c}`:c;const o=document.querySelector('meta[name="description"]');return o&&e&&o.setAttribute("content",e),()=>{document.title=c}},[t,e])}export{n as u};
